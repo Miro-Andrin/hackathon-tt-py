@@ -74,7 +74,7 @@ done
 # ---------------------------------------------------------------------------
 EXIT_CODE=0
 GHOSTFOLIO_API_URL="$API_URL" \
-  "$UV" run --project "$ROOT_DIR/tt" pytest "$ROOT_DIR/projecttests/ghostfolio_api" -v "$@" \
+  "$UV" run --project "$ROOT_DIR/tt" --extra dev pytest "$ROOT_DIR/projecttests/ghostfolio_api" -v "$@" \
   || EXIT_CODE=$?
 
 # ---------------------------------------------------------------------------
