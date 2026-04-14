@@ -77,3 +77,6 @@ evaluate/scoring/results/
 **/pnpm-lock.yaml
 **/yarn.lock
 **/package-lock.json
+
+# Local scripts
+launch-claude.sh
