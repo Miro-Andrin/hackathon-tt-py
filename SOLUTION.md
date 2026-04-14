@@ -29,7 +29,7 @@ make spinup-and-test-ghostfolio_pytx_example
 | Category | Count |
 | :--- | :--- |
 | **Total Tests** | 135 |
-| **Passed ✅** | 52 |
-| **Failed ❌** | 83 |
+| **Passed ✅** | 48 |
+| **Failed ❌** | 87 |
 
 *Last updated: 2026-04-14*

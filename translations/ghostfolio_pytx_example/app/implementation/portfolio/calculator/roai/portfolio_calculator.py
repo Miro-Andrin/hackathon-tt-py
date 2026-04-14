@@ -39,26 +39,7 @@ class RoaiPortfolioCalculator(PortfolioCalculator):
         }
 
     def get_investments(self, group_by: str | None = None) -> dict:
-        investments_by_date: dict[str, float] = {}
-        for act in self.sorted_activities():
-            if act.get("type") not in ("BUY", "SELL"):
-                continue
-            
-            date = act["date"]
-            if group_by == "month":
-                date = date[:7] + "-01"
-            elif group_by == "year":
-                date = date[:4] + "-01-01"
-            
-            amount = act.get("quantity", 0) * act.get("unitPrice", 0)
-            investments_by_date[date] = investments_by_date.get(date, 0.0) + amount
-
-        return {
-            "investments": [
-                {"date": d, "investment": v} 
-                for d, v in sorted(investments_by_date.items())
-            ]
-        }
+        return {"investments": []}
 
     def get_holdings(self) -> dict:
         return {"holdings": {}}
